@@ -1,7 +1,7 @@
 <h5>Eexmplos de Pipes</h5>
 
 <!-- Aninhando pipes só ir colocando o |, o último será o que prevalece -->
-<p>Título: {{ livro.titulo | uppercase | lowercase }}</p>
+<p>Título: {{ livro.titulo | uppercase | lowercase | camelCase }}</p>
 <!-- "(numero de casas decimais antes da vírgula).(número de casas decimais depois da vírgula, nesse caso 1-2, é no mínimo 1 e no máximo 2)" -->
 <p>Estrelas: {{ livro.rating | number : "1.1-2" }}</p>
 <p>Páginas: {{ livro.numeroPaginas | number }}</p>
