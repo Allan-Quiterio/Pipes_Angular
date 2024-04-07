@@ -8,7 +8,7 @@
 <!-- Transformando o preço em moeda brasileira R$ -->
 <p>Preço: {{ livro.preco | currency : "BRL" }}</p>
 <!-- Transformando a data em padrão brasileiro -->
-<p>Data Lançamento: {{ livro.dataLancamento | date : "dd-MM-yyyy" }}</p>
+<p>Data Lançamento: {{ livro.dataLancamento | date }}</p>
 <p>Url: {{ livro.url }}</p>
 
 <br />
