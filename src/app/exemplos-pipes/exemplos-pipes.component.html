@@ -25,6 +25,20 @@
 <!-- Aqui é onde o uso do pipe puro vem a tona, como ele é puro, ao adicionar um elemento e fazer a pesquisa do mesmo, ele não retorna do novo valor inserido, pois ele não olha para essas modificações do value -->
 <button (click)="addCurso(novoValor.value)">Add curso</button>
 
+<h4>Pipe puro</h4>
+
 <ul>
   <li *ngFor="let curso of cursos | filtroArray : filtro">{{ curso }}</li>
+</ul>
+
+<h4>Pipe impuro</h4>
+
+<ul>
+  <li *ngFor="let curso of cursos | filtroArrayImpuro : filtro">{{ curso }}</li>
+</ul>
+
+<h4>Maneira correta de usar filtros no projeto</h4>
+
+<ul>
+  <li *ngFor="let curso of obterCurso()">{{ curso }}</li>
 </ul>

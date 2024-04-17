@@ -10,6 +10,7 @@ import { registerLocaleData } from '@angular/common';
 import { SettingsService } from './settings.service';
 import { FiltroArrayPipe } from './filtro-array.pipe';
 import { FormsModule } from '@angular/forms';
+import { FiltroArrayImpuroPipe } from './filtro-array-impuro.pipe';
 
 // Nas versões mais recentes do Angular, precisamos adicionar o ptBR no registerLocaleData
 registerLocaleData(ptBR);
@@ -20,6 +21,7 @@ registerLocaleData(ptBR);
     ExemplosPipesComponent,
     CamelCasePipe,
     FiltroArrayPipe,
+    FiltroArrayImpuroPipe,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [
