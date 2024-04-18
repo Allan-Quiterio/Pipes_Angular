@@ -11,8 +11,6 @@
 <p>Data Lançamento: {{ livro.dataLancamento | date }}</p>
 <p>Url: {{ livro.url }}</p>
 
-<br />
-
 <!-- transformando o objeto para um visualização em json -->
 <P>Livro: {{ livro | json }}</P>
 
@@ -42,3 +40,11 @@
 <ul>
   <li *ngFor="let curso of obterCurso()">{{ curso }}</li>
 </ul>
+
+<h4>Pipes Assíncronos</h4>
+
+<p>{{ valorAsync | async }}</p>
+
+<h4>Utilizando um Observable</h4>
+
+<p>{{ valorAsync2 | async }}</p>
